@@ -1,4 +1,14 @@
 $(document).ready(function() {
+	
+	function updateOutput() {
+		//change the HTML of the iframe when the user types
+		//html will have css applied to it
+		$("iframe").contents().find("html").html("<html><head><style type='text/css'>" + $("#cssPanel").val() + "</style></head><body>" + $("#htmlPanel").val() + "</body></html>");
+		
+		//evaluate JS code inside of iframe window
+		document.getElementById("outputPanel").contentWindow.eval($("#javascriptPanel").val());
+	}
+	
 	//on hover the highlighted class will be applied to the element
 	//when the mouse leaves the element the class will be removed
 	$(".toggleButtons").hover(function() {
@@ -34,9 +44,12 @@ $(document).ready(function() {
 	
 	//panel width is equal to window width / 2 minus 10
 	$(".panel").width(($(window).width() / 2) - 10);
+	
+	updateOutput();
 		
 	//change the HTML of the iframe when the user types
+	//html will have css applied to it
 	$("textarea").on("change keyup paste", function() {
-		$("#outputPanel").contents().find("html").html($("#htmlPanel").val());
+		updateOutput();
 	});
 });
