@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Code Player</title>
+		
+		<link rel="stylesheet" href="css/styles.css">
+		
+		<script
+		src="https://code.jquery.com/jquery-3.1.1.min.js"
+		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous"></script>
+		
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="logo">Code Player</div>
+			
+			<nav id="buttonNav">
+				<button type="button" class="toggleButtons active" id="html">HTML</button>
+				<button type="button" class="toggleButtons" id="css">CSS</button>
+				<button type="button" class="toggleButtons" id="javascript">JavaScript</button>
+				<button type="button" class="toggleButtons active" id="output">Output</button>
+			</nav>
+		</header>
+		
+		<div id="bodyContainer">
+			<textarea id="htmlPanel" class="panel">Hello world.</textarea>
+			
+			<textarea id="cssPanel" class="panel hidden">p {color: green;}</textarea>
+			
+			<textarea id="jsPanel" class="panel hidden">Help</textarea>
+			
+			<iframe id="outputPanel" class="panel"></iframe>
+		</div>
+	</body>
+</html>
