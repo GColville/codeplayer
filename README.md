@@ -12,3 +12,5 @@ Open the following link: https://gcolville.github.io/codeplayer/ **use Google Ch
 OR
 
 Download the files and open in your web browser.
+
+There are 4 different windows for the languages and Output in the following order from left to right when all windows are open - HTML, CSS, JavaScript, and then the Output.
