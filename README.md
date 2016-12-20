@@ -3,7 +3,7 @@
 
 This project was designed to build a simple code player that contains the same functionality as codepen, jsfiddle etc.
 
-**Unfortunately, this does not work well in Firefox at the moment.**
+**There was an issue with this displaying in the Firefox browser but with the addition of normalize.css this issue has now been resolved.**
 
 ##Using this CodePlayer
 
